@@ -41,7 +41,7 @@ if button:
                 delimiter = detect_delimiter(file)
                 
                 # Use the detected delimiter to read the CSV file
-                data_df = pd.read_csv(file, delimiter=delimiter)
+                data_df = pd.read_csv(file, delimiter=delimiter,low_memory=False,error_bad_lines=False)
                 
                 data_df.to_excel(excel_writer, sheet_name=f'sheet_{i+1}', index=False)
 
