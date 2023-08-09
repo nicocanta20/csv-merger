@@ -29,7 +29,7 @@ def detect_delimiter(file, num_lines=5):
 
 
 st.title("Combine CSV files into one Excel file")
-st.write("#### Created by: [Nicolas Cantarovici](https://github.com/nicocanta20), [Florian Reyes](https://github.com/florianreyes), [Julian Fishman](https://github.com/JulianFischman)")
+st.write("#### Created by: [Nicolas Cantarovici](https://github.com/nicocanta20), [Florian Reyes](https://github.com/florianreyes), [Julian Fischman](https://github.com/JulianFischman)")
 csv_files = st.file_uploader("Upload csv files", type=["csv"], accept_multiple_files=True)
 button = st.button("Combine")
 if button:
